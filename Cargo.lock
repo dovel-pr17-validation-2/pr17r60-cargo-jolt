@@ -3835,7 +3835,7 @@ dependencies = [
  "common",
  "hex",
  "jolt-riscv",
- "object 0.40.0",
+ "object 0.41.0",
  "rayon",
  "serde",
  "serde_json",
@@ -4727,12 +4727,21 @@ version = "0.40.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "dd229a0361b9d0d4396176e02d65897f487eebeab7caa6d443855ee152ca0b9c"
 dependencies = [
- "crc32fast",
  "flate2",
+ "memchr",
+ "ruzstd",
+]
+
+[[package]]
+name = "object"
+version = "0.41.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "11dbdb66876026054e4ffc8d757d862bdf5df5aebd5c0b95a41f17832a94f7d2"
+dependencies = [
+ "crc32fast",
  "hashbrown 0.17.0",
  "indexmap 2.14.0",
  "memchr",
- "ruzstd",
 ]
 
 [[package]]
@@ -7157,7 +7166,7 @@ dependencies = [
  "jolt-platform",
  "jolt-program",
  "jolt-riscv",
- "object 0.40.0",
+ "object 0.41.0",
  "paste",
  "postcard",
  "rand 0.8.7",
